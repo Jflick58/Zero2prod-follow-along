@@ -1,4 +1,4 @@
-from rust:1.70
+FROM rust:1.70
 
 # Install Rust tooling
 ARG RUST_ANALYZER_VERSION=2023-04-10
