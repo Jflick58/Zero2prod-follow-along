@@ -3,8 +3,15 @@ name = "zero2prod"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+path = "src/lib.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 actix-web = "4.4.0"
 tokio = { version = "1.32.0", features = ["macros", "rt-multi-thread"] }
+
+# Only used for tests
+[dev-dependencies]
+reqwest = "0.11"
